@@ -1,0 +1,72 @@
+@import "http://webfonts.ru/import/arnamu.css";
+
+html, body {height:100%; margin: 0; padding: 0; }
+
+html>body {
+	font-size: 16px;
+	font-size: 68.75%;
+}
+
+body {
+	font-family: 'Arian AMU';, helvetica, arial, sans-serif;
+	font-size: 68.75%;
+	background: #1b1a1a;
+	color: #c5c5c5;
+}
+
+h1, h2 { font-family: 'Arian AMU'; padding: 10px; margin: 0 }
+h1 { font-size: large }
+
+
+.box { position:relative; width: 1000px; height:200px; margin: 0 auto; }
+.box img {
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+	display: inline-block;
+}
+
+.box form { position: absolute; display: inline-block; left:250px; top:80px; }
+
+.query {
+	transition:0.5s ease-in-out all;
+	width:500px; font-size: 25px; outline: 0; padding: 13px 25px;
+	border-radius:6px; border: 1px solid #585250; background:#e1dddc; }
+
+.query:hover {
+	background:#f2f0ef;
+}
+
+#main { text-align: center;}
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 13px 25px;
+  margin-left:60px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  background-color: #0099e5;
+  border: 1px solid #08c;
+  text-shadow: 0px 1px 0px #08c;
+  -webkit-box-shadow: 0px 1px 0px rgba(255,255,255,0.15) inset;
+  box-shadow: 0px 1px 0px rgba(255,255,255,0.15) inset;
+  transition:0.5s ease-in-out all;
+}
+
+.image {
+	display: inline-block;
+	margin:0 auto;
+}
+
+.button:hover {
+	background:#33aae6;
+	text-shadow: 0px 1px 3px #08c;
+}
+
+.logo { display:block; margin:30px auto; }
+
+a img { border: none; }
