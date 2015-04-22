@@ -3,11 +3,11 @@ error_reporting(E_ALL);
 
 include('dom/simple_html_dom.php');
 
-if( !empty($_POST['query']) ){
+if (!empty($_POST['query'])) {
     $query = $_POST['query'];
     $html = file_get_html($query);
     $output = $query;
-    foreach($html->find('.the_photo') as $e){
+    foreach ($html->find('.the_photo') as $e) {
         $output = $e->outertext . '<br>';
     }
 }
@@ -30,7 +30,7 @@ if( !empty($_POST['query']) ){
             </form>
         </div>
         <div class="image">
-            <? echo $output; ?>
+            <?=$output?>
         </div>
     </div>
 </body>
